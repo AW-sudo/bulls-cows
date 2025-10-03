@@ -58,7 +58,7 @@ resetBtnEl.addEventListener("click", () => {
   expected = generate_num();
   console.log("expected", expected);
   formEl.reset();
-  hintsEl.innerText = "Попытайтесь отгадать число...";
+  hintsEl.innerText = "Введите 4 разные цифры";
   submitBtnEl.disabled = false;
 });
 
