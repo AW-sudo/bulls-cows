@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Быки-коровы</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="h-screen flex flex-col justify-center items-center gap-8">
+    <h1 class="text-3xl font-bold">Быки-коровы</h1>
+
+    <form id="guess-form" class="flex flex-col gap-2">
+      <div class="flex gap-2">
+        <input
+          type="number"
+          name="digit"
+          required
+          min="0"
+          max="9"
+          class="w-20 p-3 bg-gray-200"
+        />
+        <input
+          type="number"
+          name="digit"
+          required
+          min="0"
+          max="9"
+          class="w-20 p-3 bg-gray-200"
+        />
+        <input
+          type="number"
+          name="digit"
+          required
+          min="0"
+          max="9"
+          class="w-20 p-3 bg-gray-200"
+        />
+        <input
+          type="number"
+          name="digit"
+          required
+          min="0"
+          max="9"
+          class="w-20 p-3 bg-gray-200"
+        />
+      </div>
+      <button
+        type="submit"
+        class="bg-gray-200 p-5 cursor-pointer disabled:bg-gray-50"
+      >
+        Отгадать
+      </button>
+    </form>
+
+    <div id="hints" class="bg-gray-200 p-8 min-h-10">
+      Попытайтесь отгадать число...
+    </div>
+
+    <div class="flex gap-5">
+      <button
+        id="reset-btn"
+        class="bg-gray-200 p-4 rounded disabled:bg-gray-100"
+      >
+        Сыграть ещё
+      </button>
+
+      <button id="clear" class="bg-gray-200 p-4 rounded disabled:bg-gray-100">
+        Очистить
+      </button>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
